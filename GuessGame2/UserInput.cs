@@ -11,13 +11,15 @@ public class UserInput
     {
         var generator = new ProxyGenerator();
         var interceptor = new MethodInterceptor();
-        _displayInformation = generator.CreateClassProxy<DisplayInformation>(interceptor);;
+        _displayInformation = generator.CreateClassProxy<DisplayInformation>(interceptor);
+        ;
         _validateInput = validateInput;
     }
-    
+
     public int GetBetAmount()
     {
-        _displayInformation.DisplayMessage("\u001b[1mWelcome to the Guess Game!!!\u001b[0m\nPlease enter the money you want to bet: ");
+        _displayInformation.DisplayMessage(
+            "\u001b[1mWelcome to the Guess Game!!!\u001b[0m\nPlease enter the money you want to bet: ");
         return _validateInput.ValidateBetAmount(Console.ReadLine());
     }
 

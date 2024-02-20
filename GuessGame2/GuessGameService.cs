@@ -15,7 +15,8 @@ public class GuessGameService
         { 3, "1 to 20" }
     };
 
-    public GuessGameService(UserInput userInput, RandomNumberGenerator randomNumberGenerator, ResultGenerator resultGenerator)
+    public GuessGameService(UserInput userInput, RandomNumberGenerator randomNumberGenerator,
+        ResultGenerator resultGenerator)
     {
         _userInput = new UserInput(new ValidateInput());
         _randomNumberGenerator = new RandomNumberGenerator();
@@ -27,23 +28,24 @@ public class GuessGameService
         try
         {
             var betAmount = _userInput.GetBetAmount();
-            int difficultyLevel = _userInput.GetDifficultyLevel();
-            
-            int[] rangeToPickFrom = GetRangeInArray(_difficultyRanges.GetValueOrDefault(difficultyLevel));
-            
-            int guessValue = _userInput.GetUserGuess(rangeToPickFrom);
-            int randomNumber = _randomNumberGenerator.GetRandomNumber(rangeToPickFrom);
+            var difficultyLevel = _userInput.GetDifficultyLevel();
+
+            var rangeToPickFrom = GetRangeInArray(_difficultyRanges.GetValueOrDefault(difficultyLevel));
+
+            var guessValue = _userInput.GetUserGuess(rangeToPickFrom);
+            var randomNumber = _randomNumberGenerator.GetRandomNumber(rangeToPickFrom);
 
             _resultGenerator.GetResultAndDisplay(betAmount, guessValue, randomNumber, difficultyLevel);
-
-        } catch (Exception ex) {
+        }
+        catch (Exception ex)
+        {
             Console.WriteLine("An error occurred: " + ex.Message);
         }
     }
 
-    private int[] GetRangeInArray(String range)
+    private int[] GetRangeInArray(string range)
     {
-        Match match = Regex.Match(range, @"(\d+)\s*to\s*(\d+)");
+        var match = Regex.Match(range, @"(\d+)\s*to\s*(\d+)");
         return new[] { int.Parse(match.Groups[1].Value), int.Parse(match.Groups[2].Value) };
     }
 }
