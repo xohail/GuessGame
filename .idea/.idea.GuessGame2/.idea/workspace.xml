@@ -7,23 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582ff0c5-9c0b-461d-ab60-aa3672f977d5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GuessGame2/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GuessGame2/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GuessGame2/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.GuessGame2/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuessGame2.sln" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuessGame2/DisplayInformation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuessGame2/GameConstants.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuessGame2/GuessGame2.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuessGame2/GuessGameController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuessGame2/GuessGameService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuessGame2/MethodInterceptor.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuessGame2/RandomNumberGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuessGame2/ResultGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuessGame2/UserInput.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuessGame2/ValidateInput.cs" afterDir="false" />
+    <list default="true" id="582ff0c5-9c0b-461d-ab60-aa3672f977d5" name="Changes" comment="Code cleanup and formatting">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GuessGame2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GuessGame2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GuessGame2.sln" beforeDir="false" afterPath="$PROJECT_DIR$/GuessGame2.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GuessGame2/MethodInterceptor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GuessGame2/MethodInterceptor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GuessGame2/ValidateInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GuessGame2/ValidateInput.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +30,7 @@
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/DisplayInformation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -63,6 +52,7 @@
     <setting file="mock://Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -102,7 +92,7 @@
     ]
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected=".NET Project.GuessGame2">
     <configuration name="GuessGame2" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -136,13 +126,34 @@
       <workItem from="1708322407452" duration="311000" />
       <workItem from="1708322729045" duration="19921000" />
     </task>
+    <task id="LOCAL-00001" summary="Revert name">
+      <option name="closed" value="true" />
+      <created>1708432673948</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708432673948</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Code cleanup and formatting">
+      <option name="closed" value="true" />
+      <created>1708432811440</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708432811440</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Revert name" />
+    <MESSAGE value="Code cleanup and formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code cleanup and formatting" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

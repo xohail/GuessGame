@@ -2,7 +2,7 @@ namespace GuessGame2;
 
 public class ValidateInput
 {
-    private int ValidateIntAndNotZero(string input)
+    public int ValidateIntAndNotZero(string input)
     {
         var value = int.Parse(input);
         if (value == 0) throw new Exception("Betting amount should not be 0");
