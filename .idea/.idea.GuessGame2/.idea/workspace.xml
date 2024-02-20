@@ -7,11 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582ff0c5-9c0b-461d-ab60-aa3672f977d5" name="Changes" comment="Code cleanup and formatting">
+    <list default="true" id="582ff0c5-9c0b-461d-ab60-aa3672f977d5" name="Changes" comment="Unit tests for ValidateInput.cs">
+      <change afterPath="$PROJECT_DIR$/GuessGame2Tests/GuessGameServiceTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GuessGame2Tests/RandomNumberGeneratorTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GuessGame2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GuessGame2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GuessGame2.sln" beforeDir="false" afterPath="$PROJECT_DIR$/GuessGame2.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GuessGame2/MethodInterceptor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GuessGame2/MethodInterceptor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GuessGame2/ValidateInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GuessGame2/ValidateInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GuessGame2.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GuessGame2.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GuessGame2/GuessGameService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GuessGame2/GuessGameService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GuessGame2Tests/GuessGame2Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GuessGame2Tests/GuessGame2Tests.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +47,8 @@
     <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/MethodInterceptor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/ValidateInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0f95373f020f428bb3bf921176c772393e200/0b/8aac00c7/CollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8b9f6a71d4ea4578ab6f2494d541ed0d32000/65/0d61ae59/Console.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d71f1e15106e4dd1a3ea8dd4eaf38ef2ae1200/6d/1a519ea4/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
@@ -53,6 +57,9 @@
     <setting file="mock://Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -142,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708432811440</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Unit tests for ValidateInput.cs">
+      <option name="closed" value="true" />
+      <created>1708434330991</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708434330991</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +168,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Revert name" />
     <MESSAGE value="Code cleanup and formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Code cleanup and formatting" />
+    <MESSAGE value="Unit tests for ValidateInput.cs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unit tests for ValidateInput.cs" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

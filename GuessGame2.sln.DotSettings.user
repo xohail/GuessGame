@@ -1,6 +1,10 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=02B59145_002D6772_002D439B_002DB8CB_002D795AEA8D6B45/@EntryIndexedValue">74ACBB3E-A29D-4057-9AFE-459B84FE224F</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestTemplateMapping/=xUnit/@EntryIndexedValue">33ff99d8-b1ad-4ed5-a4fd-376b97c2c841</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5a40561b_002D82f1_002D4a43_002Db0fe_002D20717ddcff7d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="ValidateDifficultyValue_InvalidInput_ThrowsException(input: &amp;quot;4&amp;quot;)" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::74ACBB3E-A29D-4057-9AFE-459B84FE224F::net7.0::GuessGame2Tests.ValidateInputTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::74ACBB3E-A29D-4057-9AFE-459B84FE224F::net7.0::GuessGame2Tests.RandomNumberGeneratorTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::74ACBB3E-A29D-4057-9AFE-459B84FE224F::net7.0::GuessGame2Tests.RandomNumberGeneratorTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
