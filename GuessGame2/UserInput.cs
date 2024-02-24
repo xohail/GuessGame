@@ -12,7 +12,7 @@ public class UserInput
         var generator = new ProxyGenerator();
         var interceptor = new MethodInterceptor();
         _displayInformation = generator.CreateClassProxy<DisplayInformation>(interceptor);
-        ;
+        
         _validateInput = validateInput;
     }
 

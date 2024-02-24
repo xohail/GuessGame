@@ -32,10 +32,10 @@ public class GuessGameService
 
             var rangeToPickFrom = GetRangeInArray(_difficultyRanges.GetValueOrDefault(difficultyLevel));
 
-            var guessValue = _userInput.GetUserGuess(rangeToPickFrom);
+            var userGuess = _userInput.GetUserGuess(rangeToPickFrom);
             var randomNumber = _randomNumberGenerator.GetRandomNumber(rangeToPickFrom);
 
-            _resultGenerator.GetResultAndDisplay(betAmount, guessValue, randomNumber, difficultyLevel);
+            _resultGenerator.GetResultAndDisplay(betAmount, userGuess, randomNumber, difficultyLevel);
         }
         catch (Exception ex)
         {
