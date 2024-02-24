@@ -2,7 +2,7 @@ using Castle.DynamicProxy;
 
 namespace GuessGame2;
 
-public class ResultGenerator
+public class ResultGenerator : IResultGenerator
 {
     private readonly DisplayInformation _displayInformation;
 
@@ -11,7 +11,6 @@ public class ResultGenerator
         var generator = new ProxyGenerator();
         var interceptor = new MethodInterceptor();
         _displayInformation = generator.CreateClassProxy<DisplayInformation>(interceptor);
-        ;
     }
 
     public void GetResultAndDisplay(int betAmount, int guessValue, int randomNumber, int difficultyValue)

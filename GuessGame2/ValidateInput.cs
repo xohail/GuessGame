@@ -1,6 +1,6 @@
 namespace GuessGame2;
 
-public class ValidateInput
+public class ValidateInput : IValidateInput
 {
     public int ValidateIntAndNotZero(string input)
     {

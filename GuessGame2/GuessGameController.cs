@@ -1,11 +1,20 @@
-﻿namespace GuessGame2;
+﻿using Microsoft.Extensions.DependencyInjection;
+
+namespace GuessGame2;
 
 internal abstract class GuessGameController
 {
     private static void Main(string[] args)
     {
-        GuessGameService guessGameService = new(new UserInput(new ValidateInput()), new RandomNumberGenerator(),
-            new ResultGenerator());
+        ServiceCollection services = new();
+        services.AddSingleton<IUserInput, UserInput>();
+        services.AddSingleton<IValidateInput, ValidateInput>();
+        services.AddSingleton<IRandomNumberGenerator, RandomNumberGenerator>();
+        services.AddSingleton<IResultGenerator, ResultGenerator>();
+        services.AddTransient<GuessGameService>();
+        var provider = services.BuildServiceProvider();
+
+        GuessGameService guessGameService = provider.GetService<GuessGameService>()!;
         guessGameService.GuessGameAction();
     }
 }

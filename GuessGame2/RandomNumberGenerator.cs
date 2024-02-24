@@ -1,6 +1,6 @@
 namespace GuessGame2;
 
-public class RandomNumberGenerator
+public class RandomNumberGenerator : IRandomNumberGenerator
 {
     private readonly Random _random = new();
 

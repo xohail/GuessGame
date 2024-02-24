@@ -4,23 +4,26 @@ namespace GuessGame2;
 
 public class GuessGameService
 {
-    private readonly UserInput _userInput;
-    private readonly RandomNumberGenerator _randomNumberGenerator;
-    private readonly ResultGenerator _resultGenerator;
+    private const string RangeEasy = "1 to 5";
+    private const string RangeMedium = "1 to 10";
+    private const string RangeHard = "1 to 20";
+    
+    private readonly IUserInput _userInput;
+    private readonly IRandomNumberGenerator _randomNumberGenerator;
+    private readonly IResultGenerator _resultGenerator;
 
     private readonly Dictionary<int, string?> _difficultyRanges = new()
     {
-        { 1, "1 to 5" },
-        { 2, "1 to 10" },
-        { 3, "1 to 20" }
+        { 1, RangeEasy },
+        { 2, RangeMedium },
+        { 3, RangeHard }
     };
 
-    public GuessGameService(UserInput userInput, RandomNumberGenerator randomNumberGenerator,
-        ResultGenerator resultGenerator)
+    public GuessGameService(IUserInput userInput, IRandomNumberGenerator randomNumberGenerator, IResultGenerator resultGenerator)
     {
-        _userInput = new UserInput(new ValidateInput());
-        _randomNumberGenerator = new RandomNumberGenerator();
-        _resultGenerator = new ResultGenerator();
+        _userInput = userInput;
+        _randomNumberGenerator = randomNumberGenerator;
+        _resultGenerator = resultGenerator;
     }
 
     public void GuessGameAction()
@@ -29,12 +32,12 @@ public class GuessGameService
         {
             var betAmount = _userInput.GetBetAmount();
             var difficultyLevel = _userInput.GetDifficultyLevel();
-
+            
             var rangeToPickFrom = GetRangeInArray(_difficultyRanges.GetValueOrDefault(difficultyLevel));
-
+            
             var userGuess = _userInput.GetUserGuess(rangeToPickFrom);
             var randomNumber = _randomNumberGenerator.GetRandomNumber(rangeToPickFrom);
-
+            
             _resultGenerator.GetResultAndDisplay(betAmount, userGuess, randomNumber, difficultyLevel);
         }
         catch (Exception ex)
