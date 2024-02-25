@@ -27,7 +27,18 @@ namespace GuessGame2Tests
             
             // Act and Assert
             var exception = Assert.Throws<Exception>(() => _validateInput.ValidateIntAndNotZero(input));
-            Assert.Equal("Betting amount should not be 0", exception.Message);
+            Assert.Equal("Betting amount should not be zero or less than zero", exception.Message);
+        }
+        
+        [Fact]
+        public void ValidateIntAndNotZero_InputNegative_ThrowsException()
+        {
+            // Arrange
+            string input = "-1";
+            
+            // Act and Assert
+            var exception = Assert.Throws<Exception>(() => _validateInput.ValidateIntAndNotZero(input));
+            Assert.Equal("Value should not be zero or less than zero", exception.Message);
         }
         
         [Theory]
@@ -45,7 +56,6 @@ namespace GuessGame2Tests
 
         [Theory]
         [InlineData("4")]
-        [InlineData("-1")]
         public void ValidateDifficultyValue_InvalidInput_ThrowsException(string input)
         {
             // Act and Assert

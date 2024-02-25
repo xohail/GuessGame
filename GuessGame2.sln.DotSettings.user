@@ -5,6 +5,10 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestTemplateMapping/=xUnit/@EntryIndexedValue">33ff99d8-b1ad-4ed5-a4fd-376b97c2c841</s:String>
 	
 	
+	
+	
+	
+	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f2b8b92a_002D4562_002D4a22_002D8092_002D9122580cc02e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="DisplayInformationTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::74ACBB3E-A29D-4057-9AFE-459B84FE224F::net7.0::GuessGame2Tests.DisplayInformationTest&lt;/TestId&gt;

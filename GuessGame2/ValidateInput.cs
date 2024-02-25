@@ -5,7 +5,7 @@ public class ValidateInput : IValidateInput
     public int ValidateIntAndNotZero(string input)
     {
         var value = int.Parse(input);
-        if (value == 0) throw new Exception("Betting amount should not be 0");
+        if (value <= 0) throw new Exception("Value should not be zero or less than zero");
         return value;
     }
 
