@@ -6,15 +6,22 @@ internal abstract class GuessGameController
 {
     private static void Main(string[] args)
     {
-        ServiceCollection services = new();
-        services.AddSingleton<IUserInput, UserInput>();
-        services.AddSingleton<IValidateInput, ValidateInput>();
-        services.AddSingleton<IRandomNumberGenerator, RandomNumberGenerator>();
-        services.AddSingleton<IResultGenerator, ResultGenerator>();
-        services.AddTransient<GuessGameService>();
-        var provider = services.BuildServiceProvider();
+        try
+        {
+            ServiceCollection services = new();
+            services.AddSingleton<IUserInput, UserInput>();
+            services.AddSingleton<IValidateInput, ValidateInput>();
+            services.AddSingleton<IRandomNumberGenerator, RandomNumberGenerator>();
+            services.AddSingleton<IResultGenerator, ResultGenerator>();
+            services.AddTransient<GuessGameService>();
+            var provider = services.BuildServiceProvider();
 
-        GuessGameService guessGameService = provider.GetService<GuessGameService>()!;
-        guessGameService.GuessGameAction();
+            GuessGameService guessGameService = provider.GetService<GuessGameService>()!;
+            guessGameService.GuessGameAction();    
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine("An error occurred: " + ex.Message);
+        }
     }
 }

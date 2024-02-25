@@ -28,22 +28,15 @@ public class GuessGameService
 
     public void GuessGameAction()
     {
-        try
-        {
-            var betAmount = _userInput.GetBetAmount();
-            var difficultyLevel = _userInput.GetDifficultyLevel();
+        var betAmount = _userInput.GetBetAmount();
+        var difficultyLevel = _userInput.GetDifficultyLevel();
             
-            var rangeToPickFrom = GetRangeInArray(_difficultyRanges.GetValueOrDefault(difficultyLevel));
+        var rangeToPickFrom = GetRangeInArray(_difficultyRanges.GetValueOrDefault(difficultyLevel));
             
-            var userGuess = _userInput.GetUserGuess(rangeToPickFrom);
-            var randomNumber = _randomNumberGenerator.GetRandomNumber(rangeToPickFrom);
+        var userGuess = _userInput.GetUserGuess(rangeToPickFrom);
+        var randomNumber = _randomNumberGenerator.GetRandomNumber(rangeToPickFrom);
             
-            _resultGenerator.GetResultAndDisplay(betAmount, userGuess, randomNumber, difficultyLevel);
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine("An error occurred: " + ex.Message);
-        }
+        _resultGenerator.GetResultAndDisplay(betAmount, userGuess, randomNumber, difficultyLevel);
     }
 
     private int[] GetRangeInArray(string range)
