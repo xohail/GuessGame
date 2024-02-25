@@ -7,12 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="582ff0c5-9c0b-461d-ab60-aa3672f977d5" name="Changes" comment="Unit tests for ValidateInput.cs">
-      <change afterPath="$PROJECT_DIR$/GuessGame2Tests/GuessGameServiceTest.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/GuessGame2Tests/RandomNumberGeneratorTest.cs" afterDir="false" />
+    <list default="true" id="582ff0c5-9c0b-461d-ab60-aa3672f977d5" name="Changes" comment="Use DI&#10;Add constants for strings">
+      <change afterPath="$PROJECT_DIR$/GuessGame2Tests/DisplayInformationTest.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GuessGame2Tests/UserInputTest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GuessGame2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GuessGame2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GuessGame2.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/GuessGame2.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GuessGame2/GuessGameService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GuessGame2/GuessGameService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GuessGame2/DisplayInformation.cs" beforeDir="false" afterPath="$PROJECT_DIR$/GuessGame2/DisplayInformation.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GuessGame2Tests/GuessGame2Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/GuessGame2Tests/GuessGame2Tests.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,41 +24,27 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/DisplayInformation.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameController.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/MethodInterceptor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/GuessGameService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/RandomNumberGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/ResultGenerator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/UserInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Users/hanasoft/CsharpProjects/GuessGame2/GuessGame2/ValidateInput.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0f95373f020f428bb3bf921176c772393e200/0b/8aac00c7/CollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8b9f6a71d4ea4578ab6f2494d541ed0d32000/65/0d61ae59/Console.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d71f1e15106e4dd1a3ea8dd4eaf38ef2ae1200/69/47b52aee/TargetInvocationException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d71f1e15106e4dd1a3ea8dd4eaf38ef2ae1200/6d/1a519ea4/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://Program.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fe8d3b7f024d4ae99a660a4df8e830bbf0a0/12/250d4c07/ServiceProviderServiceExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/abb88942db67a4ae752ba4ee2bd70983a913ed799eea7e29ebd56049787826/Reflect.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -71,35 +57,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Project.GuessGame2.executor&quot;: &quot;Run&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.39146343&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Project.GuessGame2.executor": "Run",
+    "28050838-fb3a-44ee-a2ee-a93f855dbb29.executor": "Debug",
+    "6144daaa-48cb-45b2-8a50-48f22a876170.executor": "Debug",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "XThreadsFramesViewSplitterKey": "0.39146343",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;PLAIN_TEXT&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
     ],
-    &quot;rider.external.source.directories&quot;: [
-      &quot;/Users/hanasoft/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache&quot;,
-      &quot;/Users/hanasoft/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache&quot;,
-      &quot;/Users/hanasoft/.local/share/Symbols/src&quot;
+    "rider.external.source.directories": [
+      "/Users/hanasoft/Library/Application Support/JetBrains/Rider2023.3/resharper-host/DecompilerCache",
+      "/Users/hanasoft/Library/Application Support/JetBrains/Rider2023.3/resharper-host/SourcesCache",
+      "/Users/hanasoft/.local/share/Symbols/src"
     ]
   }
-}</component>
-  <component name="RunManager" selected=".NET Project.GuessGame2">
+}]]></component>
+  <component name="RunManager">
     <configuration name="GuessGame2" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -132,6 +120,10 @@
       <workItem from="1708313985941" duration="404000" />
       <workItem from="1708322407452" duration="311000" />
       <workItem from="1708322729045" duration="19921000" />
+      <workItem from="1708659905091" duration="755000" />
+      <workItem from="1708683588162" duration="3684000" />
+      <workItem from="1708743774459" duration="19000" />
+      <workItem from="1708743805780" duration="8355000" />
     </task>
     <task id="LOCAL-00001" summary="Revert name">
       <option name="closed" value="true" />
@@ -157,7 +149,39 @@
       <option name="project" value="LOCAL" />
       <updated>1708434330991</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="RandomNumberGeneratorTest.cs added">
+      <option name="closed" value="true" />
+      <created>1708439456522</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708439456522</updated>
+    </task>
+    <task id="LOCAL-00005" summary="README.md update">
+      <option name="closed" value="true" />
+      <created>1708440553621</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1708440553621</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Code cleanup">
+      <option name="closed" value="true" />
+      <created>1708737282680</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708737282680</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Use DI&#10;Add constants for strings">
+      <option name="closed" value="true" />
+      <created>1708753222414</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708753222414</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,7 +193,36 @@
     <MESSAGE value="Revert name" />
     <MESSAGE value="Code cleanup and formatting" />
     <MESSAGE value="Unit tests for ValidateInput.cs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unit tests for ValidateInput.cs" />
+    <MESSAGE value="RandomNumberGeneratorTest.cs added" />
+    <MESSAGE value="README.md update" />
+    <MESSAGE value="Code cleanup" />
+    <MESSAGE value="Use DI&#10;Add constants for strings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use DI&#10;Add constants for strings" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet Exception Breakpoints">
+          <properties exception="System.NullReferenceException" isInternal="false" displayValue="NullReferenceException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/GuessGame2Tests/DisplayInformationTest.cs</url>
+          <line>53</line>
+          <properties documentPath="$PROJECT_DIR$/GuessGame2Tests/DisplayInformationTest.cs" initialLine="53" containingFunctionPresentation="Method 'TestDisplayMessageMultiString'">
+            <startOffsets>
+              <option value="1465" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1494" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

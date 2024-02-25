@@ -11,4 +11,10 @@ public class DisplayInformation
     {
         Console.WriteLine($"{string1}\n{string2,-30}\n{string3,-30}\n{string4,-30}");
     }
+
+    public string Display()
+    {
+        Console.WriteLine("What is your name");
+        return Console.ReadLine();
+    }
 }
