@@ -7,7 +7,7 @@ public class GuessGameService
     private const string RangeEasy = "1 to 5";
     private const string RangeMedium = "1 to 10";
     private const string RangeHard = "1 to 20";
-    
+
     private readonly IUserInput _userInput;
     private readonly IRandomNumberGenerator _randomNumberGenerator;
     private readonly IResultGenerator _resultGenerator;
@@ -19,7 +19,8 @@ public class GuessGameService
         { 3, RangeHard }
     };
 
-    public GuessGameService(IUserInput userInput, IRandomNumberGenerator randomNumberGenerator, IResultGenerator resultGenerator)
+    public GuessGameService(IUserInput userInput, IRandomNumberGenerator randomNumberGenerator,
+        IResultGenerator resultGenerator)
     {
         _userInput = userInput;
         _randomNumberGenerator = randomNumberGenerator;
@@ -30,12 +31,12 @@ public class GuessGameService
     {
         var betAmount = _userInput.GetBetAmount();
         var difficultyLevel = _userInput.GetDifficultyLevel();
-            
+
         var rangeToPickFrom = GetRangeInArray(_difficultyRanges.GetValueOrDefault(difficultyLevel));
-            
+
         var userGuess = _userInput.GetUserGuess(rangeToPickFrom);
         var randomNumber = _randomNumberGenerator.GetRandomNumber(rangeToPickFrom);
-            
+
         _resultGenerator.GetResultAndDisplay(betAmount, userGuess, randomNumber, difficultyLevel);
     }
 

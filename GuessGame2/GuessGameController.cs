@@ -16,8 +16,8 @@ internal abstract class GuessGameController
             services.AddTransient<GuessGameService>();
             var provider = services.BuildServiceProvider();
 
-            GuessGameService guessGameService = provider.GetService<GuessGameService>()!;
-            guessGameService.GuessGameAction();    
+            var guessGameService = provider.GetService<GuessGameService>()!;
+            guessGameService.GuessGameAction();
         }
         catch (Exception ex)
         {

@@ -18,11 +18,11 @@ public class ResultGenerator : IResultGenerator
         if (guessValue == randomNumber)
         {
             var prizeMoney = WinningPrizeCalculator(betAmount, difficultyValue);
-            _displayInformation.DisplayMessage($"\u001b[1mCongratulations!! You have won: {prizeMoney} \u001b[0m");
+            DisplayInformation.DisplayMessage($"\u001b[1mCongratulations!! You have won: {prizeMoney} \u001b[0m");
         }
         else
         {
-            _displayInformation.DisplayMessage("\u001b[1mSorry you lost!! :( \u001b[0m");
+            DisplayInformation.DisplayMessage("\u001b[1mSorry you lost!! :( \u001b[0m");
         }
     }
 

@@ -23,8 +23,8 @@ public class DisplayInformationTest
         _consoleInput = new Mock<TextReader>();
         Console.SetOut(consoleOutputWriter);
         Console.SetIn(_consoleInput.Object);
-        
-        _displayInformation = new();
+
+        _displayInformation = new DisplayInformation();
     }
 
     [Test]
@@ -33,7 +33,7 @@ public class DisplayInformationTest
         SetupUserResponses("Jason", "10", "20");
         var expectedPrompt = "What is your name";
 
-        _displayInformation.Display();
+        DisplayInformation.Display();
         var outputLines = _consoleOutput.ToString().Split("\n");
         Assert2.Equal(expectedPrompt, outputLines[0]);
     }
@@ -42,12 +42,11 @@ public class DisplayInformationTest
     public void TestDisplayMessageSingleString()
     {
         var expectedPrompt = "\u001b[1mWelcome to the Guess Game!!!";
-        _displayInformation.DisplayMessage("\u001b[1mWelcome to the Guess Game!!!");
+        DisplayInformation.DisplayMessage("\u001b[1mWelcome to the Guess Game!!!");
         var outputLines = _consoleOutput.ToString().Split("\n");
         Assert2.Equal(expectedPrompt, outputLines[0]);
-
     }
-    
+
     [Test]
     public void TestDisplayMessageMultiString()
     {
@@ -55,22 +54,19 @@ public class DisplayInformationTest
         var expectedPrompt2 = "str2                          ";
         var expectedPrompt3 = "str3                          ";
         var expectedPrompt4 = "str4                          ";
-        _displayInformation.DisplayMessage("str1", "str2", "str3", "str4");
+        DisplayInformation.DisplayMessage("str1", "str2", "str3", "str4");
         var outputLines = _consoleOutput.ToString().Split("\n");
         Assert2.Equal(expectedPrompt1, outputLines[0]);
         Assert2.Equal(expectedPrompt2, outputLines[1]);
         Assert2.Equal(expectedPrompt3, outputLines[2]);
         Assert2.Equal(expectedPrompt4, outputLines[3]);
-
     }
 
     private MockSequence SetupUserResponses(params string[] responses)
     {
         var sequence = new MockSequence();
         foreach (var response in responses)
-        {
             _consoleInput.InSequence(sequence).Setup(x => x.ReadLine()).Returns(response);
-        }
         return sequence;
     }
 }
