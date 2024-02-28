@@ -12,7 +12,6 @@ public class GuessGameService
     private readonly IUserInput _userInput;
     private readonly IRandomNumberGenerator _randomNumberGenerator;
     private readonly IResultGenerator _resultGenerator;
-    private readonly IDisplayInformation _displayInformation;
 
     private readonly Dictionary<int, string?> _difficultyRanges = new()
     {
@@ -21,12 +20,11 @@ public class GuessGameService
         { 3, RangeHard }
     };
     
-    public GuessGameService(IUserInput userInput, IRandomNumberGenerator randomNumberGenerator, IResultGenerator resultGenerator, IDisplayInformation displayInformation)
+    public GuessGameService(IUserInput userInput, IRandomNumberGenerator randomNumberGenerator, IResultGenerator resultGenerator)
     {
         _userInput = userInput;
         _randomNumberGenerator = randomNumberGenerator;
         _resultGenerator = resultGenerator;
-        _displayInformation = displayInformation;
     }
 
     public void GuessGameAction()
@@ -45,7 +43,7 @@ public class GuessGameService
         }
         catch (Exception ex)
         {
-            _displayInformation.DisplayMessage("An error occurred: " + ex.Message);
+            IDisplayInformation.DisplayMessage("An error occurred: " + ex.Message);
         }
     }
 

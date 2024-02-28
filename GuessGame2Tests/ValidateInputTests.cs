@@ -27,7 +27,7 @@ public class ValidateInputTests
 
         // Act and Assert
         var exception = Assert.Throws<Exception>(() => _validateInput.ValidateIntAndNotZero(input));
-        Assert.Equal("Betting amount should not be zero or less than zero", exception.Message);
+        Assert.Equal("Value should not be zero or less than zero", exception.Message);
     }
 
     [Fact]
