@@ -1,6 +1,6 @@
 namespace GuessGame2;
 
-public class DisplayInformation
+public class DisplayInformation : IDisplayInformation
 {
     public virtual void DisplayMessage(string message)
     {

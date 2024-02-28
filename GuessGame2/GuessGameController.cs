@@ -11,6 +11,7 @@ internal abstract class GuessGameController
         services.AddSingleton<IValidateInput, ValidateInput>();
         services.AddSingleton<IRandomNumberGenerator, RandomNumberGenerator>();
         services.AddSingleton<IResultGenerator, ResultGenerator>();
+        services.AddSingleton<IDisplayInformation, DisplayInformation>();
         services.AddTransient<GuessGameService>();
         var provider = services.BuildServiceProvider();
 
