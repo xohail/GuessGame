@@ -12,6 +12,7 @@ public class GuessGameService
     private readonly IUserInput _userInput;
     private readonly IRandomNumberGenerator _randomNumberGenerator;
     private readonly IResultGenerator _resultGenerator;
+    private readonly IDisplayInformation _displayInformation;
 
     private readonly Dictionary<int, string?> _difficultyRanges = new()
     {
@@ -19,26 +20,33 @@ public class GuessGameService
         { 2, RangeMedium },
         { 3, RangeHard }
     };
-
-    public GuessGameService(IUserInput userInput, IRandomNumberGenerator randomNumberGenerator,
-        IResultGenerator resultGenerator)
+    
+    public GuessGameService(IUserInput userInput, IRandomNumberGenerator randomNumberGenerator, IResultGenerator resultGenerator, IDisplayInformation displayInformation)
     {
         _userInput = userInput;
         _randomNumberGenerator = randomNumberGenerator;
         _resultGenerator = resultGenerator;
+        _displayInformation = displayInformation;
     }
 
     public void GuessGameAction()
     {
-        var betAmount = _userInput.GetBetAmount();
-        var difficultyLevel = _userInput.GetDifficultyLevel();
-
-        var rangeToPickFrom = GetRangeInArray(_difficultyRanges.GetValueOrDefault(difficultyLevel));
-
-        var userGuess = _userInput.GetUserGuess(rangeToPickFrom);
-        var randomNumber = _randomNumberGenerator.GetRandomNumber(rangeToPickFrom);
-
-        _resultGenerator.GetResultAndDisplay(betAmount, userGuess, randomNumber, difficultyLevel);
+        try
+        {
+            var betAmount = _userInput.GetBetAmount();
+            var difficultyLevel = _userInput.GetDifficultyLevel();
+            
+            var rangeToPickFrom = GetRangeInArray(_difficultyRanges.GetValueOrDefault(difficultyLevel));
+            
+            var userGuess = _userInput.GetUserGuess(rangeToPickFrom);
+            var randomNumber = _randomNumberGenerator.GetRandomNumber(rangeToPickFrom);
+            
+            _resultGenerator.GetResultAndDisplay(betAmount, userGuess, randomNumber, difficultyLevel);
+        }
+        catch (Exception ex)
+        {
+            _displayInformation.DisplayMessage("An error occurred: " + ex.Message);
+        }
     }
 
     private int[] GetRangeInArray(string range)
